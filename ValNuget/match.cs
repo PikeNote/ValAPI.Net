@@ -143,19 +143,7 @@ namespace ValAPINet
             public int numPoints { get; set; }
         }
 
-        public class PlantLocation
-        {
-            public int x { get; set; }
-            public int y { get; set; }
-        }
-
-        public class DefuseLocation
-        {
-            public int x { get; set; }
-            public int y { get; set; }
-        }
-
-        public class VictimLocation
+        public class Location
         {
             public int x { get; set; }
             public int y { get; set; }
@@ -174,9 +162,9 @@ namespace ValAPINet
             public int roundTime { get; set; }
             public string killer { get; set; }
             public string victim { get; set; }
-            public VictimLocation victimLocation { get; set; }
+            public Location victimLocation { get; set; }
             public List<string> assistants { get; set; }
-            public List<object> playerLocations { get; set; }
+            public List<PlayerLocation> playerLocations { get; set; }
             public FinishingDamage finishingDamage { get; set; }
             public int round { get; set; }
         }
@@ -190,11 +178,18 @@ namespace ValAPINet
             public int spent { get; set; }
         }
 
+        public class PlayerLocation
+        {
+            public string subject { get; set; }
+            public int viewRadius { get; set; }
+            public Location location { get; set; }
+        }
+
         public class PlayerStat
         {
             public string subject { get; set; }
             public List<Kill> kills { get; set; }
-            public List<object> damage { get; set; }
+            public List<Damage> damage { get; set; }
             public int score { get; set; }
             public Economy economy { get; set; }
             public Ability ability { get; set; }
@@ -211,16 +206,26 @@ namespace ValAPINet
             public string winningTeam { get; set; }
             public int plantRoundTime { get; set; }
             public object plantPlayerLocations { get; set; }
-            public PlantLocation plantLocation { get; set; }
+            public Location plantLocation { get; set; }
             public string plantSite { get; set; }
             public int defuseRoundTime { get; set; }
             public object defusePlayerLocations { get; set; }
-            public DefuseLocation defuseLocation { get; set; }
+            public Location defuseLocation { get; set; }
             public List<PlayerStat> playerStats { get; set; }
             public string roundResultCode { get; set; }
             public object playerEconomies { get; set; }
             public object playerScores { get; set; }
         }
+
+        public class Damage
+        {
+            public string receiver { get; set; }
+            public int damage { get; set; }
+            public int legshots { get; set; }
+            public int bodyshots { get; set; }
+            public int headshots { get; set; }
+        }
+
         public static MatchData GetMatchData(Auth au, string matchID)
         {
             MatchData ret = new MatchData();
