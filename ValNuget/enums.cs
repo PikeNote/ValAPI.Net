@@ -29,6 +29,11 @@
         public const string Reyna = "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc";
         public const string Omen = "8e253930-4c05-31dd-1b6c-968525494517";
         public const string Jett = "add6443a-41bd-e414-f6ad-e58d267f4e95";
+        public const string Waylay = "df1cb487-4902-002e-5c17-d28e83e78588";
+        public const string Gekko = "e370fa57-4757-3604-3648-499e1f642d3f";
+        public const string Deadlock = "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235";
+        public const string Vyse = "efba5359-4016-a1e5-7626-b1ae7689594";
+        public const string Clove = "1dbf2edd-4729-0984-3115-daa5eed44993";
     }
     public class Ranks
     {
