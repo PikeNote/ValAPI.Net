@@ -2,19 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>ValAPI.Net</AssemblyName>
+    <AssemblyName>Pike.ValAPI.Net</AssemblyName>
     <RootNamespace>ValAPINet</RootNamespace>
-    <Authors>BrianBaldner</Authors>
-    <Description>A class library for interacting with the Valorant In Game API.</Description>
-    <RepositoryUrl>https://github.com/brianbaldner/ValAPI.Net</RepositoryUrl>
-    <PackageReleaseNotes>Changed the Agents to constants and fixed Sova's id (thanks teddn)</PackageReleaseNotes>
+    <Authors>PikeNote</Authors>
+    <Description>Fork of ValAPI.Net by Brian Baldner; A class library for interacting with the Valorant In Game API.</Description>
+    <RepositoryUrl>https://github.com/PikeNote/ValAPI.Net</RepositoryUrl>
+    <PackageReleaseNotes>Fixed Agent IDs; Added Missing Objects</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.3.1</Version>
+    <Version>1.3.2</Version>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/brianbaldner/ValAPI.Net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/PikeNote/ValAPI.Net</PackageProjectUrl>
     <PackageTags>Valorant, Valorant API, Valorant.Net</PackageTags>
     <PackageIconUrl />
     <PackageLicenseFile>license.txt</PackageLicenseFile>

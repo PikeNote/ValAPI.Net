@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ValNuget\ValAPI.Net.csproj" />
+    <ProjectReference Include="..\ValNuget\Pike.ValAPI.Net.csproj" />
   </ItemGroup>
 
 </Project>
